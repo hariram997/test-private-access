@@ -6,6 +6,7 @@ curl -s --output guru-shifu.tar.gz "https://guru-shifu-artifacts.s3.ap-south-1.a
 tar -xf guru-shifu.tar.gz
 touch .env
 echo "REACT_APP_HOST_URL=https://8080-${GITPOD_WORKSPACE_URL#*//}" >> .env
+mkdir /workspace/gitpod/m2-repository
 printf '<settings>\n  <localRepository>/workspace/gitpod/m2-repository/</localRepository>\n</settings>\n' > /home/gitpod/.m2/settings.xml
 echo "Loading guru-shifu images..."
 docker load -i guru-shifu-images.tar.gz
