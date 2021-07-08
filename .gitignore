@@ -2,6 +2,6 @@
 .ignore/.env
 .ignore/*.tar.gz
 .ignore/docker-compose.yml
-./ignore/log.txt
+.ignore/log.txt
 .ignore/go.sh
 m2-repository/
