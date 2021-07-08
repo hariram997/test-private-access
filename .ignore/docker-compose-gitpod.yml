@@ -35,7 +35,7 @@ services:
     volumes:
       - /workspace/guru-shifu-log/:/project/api/logs
       - /workspace/gitpod/:/home/gitpod/guru-shifu
-      - home/gitpod/.m2/:/home/gitpod/.m2
+      - /home/gitpod/.m2/:/home/gitpod/.m2
     environment:
       WAIT_HOSTS: mysql:3306
       DB_HOST: "guru-shifu-db"
