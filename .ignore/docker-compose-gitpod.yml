@@ -34,8 +34,8 @@ services:
       - 8080:8080    
     volumes:
       - /workspace/guru-shifu-log/:/project/api/logs
-      - /workspace/gitpod/:/root/guru-shifu
-      - ${HOME}/.m2/:/root/.m2 
+      - /workspace/gitpod/:/home/gitpod/guru-shifu
+      - home/gitpod/.m2/:/home/gitpod/.m2
     environment:
       WAIT_HOSTS: mysql:3306
       DB_HOST: "guru-shifu-db"
