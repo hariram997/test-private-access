@@ -21,4 +21,3 @@ then
   echo "Guru-shifu started successfully..."
 fi
 cd /workspace
-sudo chmod -R 777 gitpod
