@@ -1,7 +1,7 @@
 tasks:
   - before: echo 'Setting up guru shifu. This may take around 5 minutes...'
     init: ./.ignore/go-gitpod.sh  >> .ignore/log.txt 
-    command: echo 'Guru Shifu Started'
+    command: ./.ignore/gitpod-command.sh  >> .ignore/log.txt && echo 'Guru Shifu Started'
 
 ports:
   - port: 3000
