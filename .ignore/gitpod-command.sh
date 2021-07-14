@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $DIR
+touch .env
+echo "REACT_APP_HOST_URL=https://8080-${GITPOD_WORKSPACE_URL#*//}" >> .env
 echo "Starting guru-shifu..."
 docker-compose -f docker-compose-gitpod.yml up -d
 if [ $? == 0 ]
