@@ -8,5 +8,6 @@
         "**/.DS_Store": true,
         "**/.*":true,
         "**/m2-repository":true
-    }
+    },
+    "java.project.importOnFirstTimeStartup": "automatic",
 }
