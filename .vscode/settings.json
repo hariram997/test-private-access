@@ -10,4 +10,5 @@
         "**/m2-repository":true
     },
     "java.project.importOnFirstTimeStartup": "automatic",
+    "java.server.launchMode": "Standard",
 }
