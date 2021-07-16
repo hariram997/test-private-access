@@ -1,7 +1,7 @@
 tasks:
   - before: echo 'Setting up guru shifu. This may take around 5 minutes...'
     init: ./.ignore/init.sh  >> .ignore/log.txt
-    command: ./.ignore/start.sh  >> .ignore/log.txt && echo -e "\x1b[1;33;4;44m Guru Shifu Started! \x1b[m"
+    command: ./.ignore/start.sh  >> .ignore/log.txt && echo -e "\x1b[31;42m Guru Shifu Started! \x1b[m"
 
 ports:
   - port: 3000
