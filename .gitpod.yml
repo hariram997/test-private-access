@@ -15,3 +15,5 @@ vscode:
   extensions:
     - redhat.java
     - k--kato.intellij-idea-keybindings
+    - vscjava.vscode-java-test
+    - vscjava.vscode-java-debug
