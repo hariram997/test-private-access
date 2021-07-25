@@ -9,7 +9,9 @@ cd $DIR
 touch .env
 echo "REACT_APP_HOST_URL=https://8080-${GITPOD_WORKSPACE_URL#*//}" > .env
 echo "$(timestamp) Starting guru-shifu..."
+echo "$(timestamp) Running docker-compose up in detach mode.."
 docker-compose -f docker-compose-gitpod.yml up -d
+echo "$(timestamp) Docker compose completed."
 if [ $? == 0 ]
 then
   echo "$(timestamp) Waiting for guru-shifu to start up.... "
