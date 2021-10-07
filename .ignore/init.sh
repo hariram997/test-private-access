@@ -11,9 +11,13 @@ if [ $STAGE == "prod" ]
 then
     echo "$(timestamp) Using Prod Artifact..."
     ARTIFACT_URL="https://guru-shifu-artifacts.s3.ap-south-1.amazonaws.com/Guru-Shifu-Trainee-Output/outputProd/guru-shifu-twi-prod-gitpod.tar.gz"
+elif [ $STAGE == "test" ]
+then
+    echo "$(timestamp) Using Test Artifact..."
+    ARTIFACT_URL="https://guru-shifu-artifacts.s3.ap-south-1.amazonaws.com/Guru-Shifu-Trainee-Output/outputProd/guru-shifu-twi-prod-gitpod.tar.gz"
 else
     echo "$(timestamp) Using Dev Artifact..."
-    ARTIFACT_URL="https://guru-shifu-artifacts.s3.ap-south-1.amazonaws.com/Guru-Shifu-Trainee-Output/outputDev/guru-shifu-twi-dev-gitpod.tar.gz"
+    ARTIFACT_URL="https://guru-shifu-artifacts.s3.ap-south-1.amazonaws.com/Guru-Shifu-Trainee-Output/outputTest/guru-shifu-twi-test-gitpod.tar.gz"
 fi
 echo "$(timestamp) Starting download of artifact ..."
 curl -s --output guru-shifu.tar.gz "$ARTIFACT_URL"
