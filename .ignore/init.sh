@@ -7,6 +7,7 @@ timestamp(){
 echo "$(timestamp) Locating required resources..."
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $DIR
+echo "$DIR"
 if [ $STAGE == "prod" ]
 then
     echo "$(timestamp) Using Prod Artifact..."

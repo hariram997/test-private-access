@@ -5,3 +5,4 @@
 .ignore/log.txt
 .ignore/go.sh
 m2-repository/
+.idea/
