@@ -4,9 +4,9 @@ timestamp(){
     date
 }
 
-# echo "$(timestamp) Locating required resources..."
-# DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-# cd $DIR
+echo "$(timestamp) Locating required resources..."
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+cd $DIR
 echo "Please Enter your Details Below ...."
 read -p "Enter your name : " USER_NAME
 read -s -p "Enter your password : " PASSWORD
